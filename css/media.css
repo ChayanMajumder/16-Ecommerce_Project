@@ -1,0 +1,51 @@
+@media(max-width: 1024px){
+    .header-container{
+        width: 90%;
+    }
+    .sub-header-container{
+        width: 90%;
+    }
+    .menu-text{
+        display: none;
+    }
+    .slider-text h2{
+        font-size: 45px;
+    }
+    .fusion-products-container{
+        width: 90%;
+        flex-direction: column;
+
+        align-items: center;
+    }
+    .fusion-products-box{
+        width: 50%;
+        
+    }
+    .fusion-products-text{
+        padding: 30px;
+    }
+    .fusion-products-text h3{
+        font-size: 21px;
+    }
+    .categories-container{
+        width: 90%;
+    }
+    .brand-container{
+        width: 90%;
+    }
+    .product-arrival-container{
+        width: 90%;
+    }
+    .product-arrival-title{
+        width: 90%;
+    }
+    .flash-sale-container{
+        width: 90%;
+    }
+    .top-selling-prodcuts-container{
+        width: 90%;
+    }
+    .footer-container{
+        width: 90%;
+    }
+}
