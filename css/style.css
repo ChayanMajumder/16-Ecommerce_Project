@@ -16,7 +16,11 @@ body{
 #top-header{
     width: 100%;
     height: auto;
+    background: #fff;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 .header-container{
     width: 1140px;
@@ -50,6 +54,9 @@ body{
     height: auto;
     background: #AE1C9A;
     padding: 10px 0;
+    position: fixed;
+    top: 72px;
+    z-index: 999;
 }
 .sub-header-container{
     width: 1140px;
@@ -94,11 +101,19 @@ body{
     background: #000;
     color: #fff;
 }
+.toggle{
+    display: none;
+}
+.toggle i{
+    color: #fff;
+    font-size: 30px;
+}
 
 
 #banner{
     width: 100%;
     height: auto;
+    padding-top: 130px;
 }
 .img-box{
     width: 100%;
@@ -173,9 +188,10 @@ body{
 }
 .fusion-products-text{
     width: 60%;
-    padding: 30px;
+    /* padding: 30px; */
     position: absolute;
-    top: 0;
+    top: 25px;
+    left: 25px;
 }
 .fusion-products-text h3{
     font-size: 34px;
@@ -385,12 +401,12 @@ body{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: start;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .product-box{
-    width: 260px;
+    width: 250px;
     height: auto;
     background: #fff;
     border: 1px solid transparent;
@@ -633,6 +649,7 @@ body{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-box h5{
     color: #fff;

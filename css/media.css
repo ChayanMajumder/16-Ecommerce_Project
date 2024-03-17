@@ -6,14 +6,34 @@
         width: 90%;
     }
     .menu-text{
-        display: none;
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+        top: 140px;
+        right: 0;
+        background: #ae1c9a;
+        /* display: none; */
+        z-index: 999;
+        transform: translateX(100%);
+        transition: all 0.6s;
+    }
+    .show-menu{
+        transform: translateX(0);
+    }
+    .menu-text ul li{
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .toggle{
+        display: block;
     }
     .slider-text h2{
         font-size: 45px;
     }
     .fusion-products-container{
         width: 90%;
-        flex-direction: column;
+        flex-direction: row;
 
         align-items: center;
     }
@@ -22,7 +42,7 @@
         
     }
     .fusion-products-text{
-        padding: 30px;
+        padding: 0;
     }
     .fusion-products-text h3{
         font-size: 21px;
@@ -48,4 +68,228 @@
     .footer-container{
         width: 90%;
     }
+}
+
+
+@media(max-width: 768px){
+    .header-container nav ul li a span{
+        display: none;
+    }
+    .slider-text h2{
+        font-size: 32px;
+    }
+    .slider-text p{
+        font-size: 20px;
+    }
+    .slider-text p span{
+        font-size: 20px;
+    }
+    .fusion-products-text h3{
+        font-size: 18px;
+    }
+    .categories-title span{
+        font-size: 30px;
+    }
+    .brand-title span{
+        font-size: 30px;
+    }
+    .product-arrival-title span{
+        font-size: 30px;
+    }
+    .flash-sale-title span{
+        font-size: 30px;
+    }
+    .top-selling-prodcuts-title span{
+        font-size: 30px;
+    }
+    .top-selling-prodcuts-items{
+        justify-content: space-between;
+    }
+    .top-selling-prodcuta-box{
+        width: 325px;
+    }
+    .product-box{
+        width: 200px;
+    }
+    .product-items{
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 425px){
+    .header-button button{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .header-container nav ul li i{
+        font-size: 12px;
+    }
+    .header-container nav ul li a{
+        padding: 0 5px;
+    }
+    .menu-text{
+        top: 100px;
+    }
+    .list-text span{
+        font-size: 14px;
+    }
+    .slider-text h2{
+        font-size: 18px;
+    }
+    .slider-text p{
+        font-size: 12px;
+    }
+    .slider-text p span{
+        font-size: 12px;
+    }
+    .slider-text button{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .fusion-products-text h3{
+        font-size: 10px;
+    }
+    .fusion-products-text span{
+        font-size: 10px;
+    }
+    .fusion-products-text button{
+        margin-top: 5px;
+        padding: 3px 15px;
+        font-size: 10px;
+    }
+    .categories-title span{
+        font-size: 18px;
+    }
+    .categories-title a{
+        font-size: 16px;
+    }
+    .categories-box{
+        width: 100px;
+        padding: 15px 0;
+    }
+    .categories-img-box img{
+        width: 35px;
+    }
+    .categories-box span{
+        font-size: 14px;
+    }
+    .brand-title span{
+        font-size: 18px;
+    }
+    .brand-title a{
+        font-size: 15px;
+    }
+    .brand-box img{
+        width: 60px;
+    }
+    .brand-box{
+        width: 100px ;
+        height: 40px;
+    }
+    .product-arrival-title span{
+        font-size: 18px;
+    }
+    .product-arrival-title a{
+        font-size: 15px;
+    }
+    .product-arrival-title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-box{
+        width: 150px;
+    }
+    .product-arrival-box-text-icon i{
+        font-size: 8px;
+    }
+    .product-arrival-box-text-info h6{
+        font-size: 10px;
+    }
+    .product-arrival-box-text-info button{
+        font-size: 10px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+    .product-arrival-box-text-info :nth-child(2){
+        font-size: 10px;
+    }
+    .product-arrival-box-text-info :nth-child(3){
+        font-size: 12px;
+    }
+    .flash-sale-title span{
+        font-size: 18px;
+    }
+    .flash-sale-title a{
+        font-size: 15px;
+    }
+    .top-selling-prodcuts-title span{
+        font-size: 18px;
+    }
+    .top-selling-prodcuts-title a{
+        font-size: 15px;
+    }
+    .top-selling-prodcuta-box{
+        width: 160px;
+    }
+    .product-arrival-box-text-icon i{
+        font-size: 5px;
+    }
+    .top-product-arrival-text :nth-child(1){
+        font-size: 8px;
+    }
+    .top-product-arrival-text :nth-child(3){
+        font-size: 10px;
+    }
+    .top-product-arrival-text :nth-child(4){
+        font-size: 12px;
+    }
+    .top-prodcuts-text button{
+        padding: 3px 8px ;
+        margin-top: 5px;
+    }
+    .img img{
+        width: 100px;
+    }
+    #sub-header{
+        top: 52px;
+    }
+    .list-text i{
+        font-size: 15px;
+    }
+    .list-text span {
+        font-size: 10px;
+    }
+    .toggle i{
+        font-size: 18px;
+    }
+    .footer-box h5{
+        font-size: 15px;
+    }
+    .footer-box ul li a{
+        font-size: 10px;
+    }
+    .footer-box ul li{
+        padding: 0;
+    }
+    .footer-address-text p strong{
+        font-size: 15px;
+    }
+    .footer-address-text p{
+        font-size: 10px;
+    }
+    .footer-img-box img{
+        width: 70px;
+    }
+    .fusion-products-container{
+        flex-direction: column;
+    }
+    .fusion-products-box{
+        width: 75%;
+    }
+    .footer-address-icon i{
+        font-size: 15px;
+    }
+
+        
 }

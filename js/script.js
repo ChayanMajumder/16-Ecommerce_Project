@@ -15,3 +15,11 @@ disableOnInteraction: false,
         prevEl: ".swiper-button-prev",
     }
 });
+
+
+let toggleBtn = document.querySelector(".toggle");
+let menuText = document.querySelector(".menu-text");
+toggleBtn.addEventListener("click", ()=> {
+    document.querySelector(".menu-text").classList.toggle("show-menu");
+    // console.log(menuText);
+});
